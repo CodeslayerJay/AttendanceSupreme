@@ -11,6 +11,7 @@ namespace AttendanceSupreme.Engine.Entities
         {
             Departments = new HashSet<UserDept>();
             Roles = new HashSet<UserRole>();
+            ScheduledTimes = new HashSet<ScheduledTime>();
         }
 
         public string FirstName { get; set; }
@@ -23,5 +24,6 @@ namespace AttendanceSupreme.Engine.Entities
         public virtual UserProfile Profile { get; set; }
         public virtual ICollection<UserDept> Departments { get; set; }
         public virtual ICollection<UserRole> Roles { get; set; }
+        public virtual ICollection<ScheduledTime> ScheduledTimes { get; set; }
     }
 }

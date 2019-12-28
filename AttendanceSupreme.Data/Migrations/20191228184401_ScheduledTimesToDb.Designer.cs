@@ -4,14 +4,16 @@ using AttendanceSupreme.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AttendanceSupreme.Data.Migrations
 {
     [DbContext(typeof(ASDataContext))]
-    partial class ASDataContextModelSnapshot : ModelSnapshot
+    [Migration("20191228184401_ScheduledTimesToDb")]
+    partial class ScheduledTimesToDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

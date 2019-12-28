@@ -25,7 +25,7 @@ namespace AttendanceSupreme.Data
         public virtual DbSet<TimeLogType> TimeLogTypes { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserProfile> UserProfiles { get; set; }
-
+        public virtual DbSet<ScheduledTime> ScheduledTimes { get; set; }
         public virtual DbSet<PreferredDay> UserPreferredDays { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
