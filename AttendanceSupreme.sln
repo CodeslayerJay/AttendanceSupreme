@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceSupreme.API", "At
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceSupreme.Data", "AttendanceSupreme.Data\AttendanceSupreme.Data.csproj", "{FAFFA0C9-DB60-40CC-8272-3106FA221A8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceSupreme.Engine", "AttendanceSupreme.Engine\AttendanceSupreme.Engine.csproj", "{6902D7EB-E779-4F7E-919A-1C23822548C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceSupreme.Web", "AttendanceSupreme.Web\AttendanceSupreme.Web.csproj", "{EF94DD94-938A-4460-849A-E2D13B9FC727}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FAFFA0C9-DB60-40CC-8272-3106FA221A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAFFA0C9-DB60-40CC-8272-3106FA221A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAFFA0C9-DB60-40CC-8272-3106FA221A8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6902D7EB-E779-4F7E-919A-1C23822548C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6902D7EB-E779-4F7E-919A-1C23822548C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6902D7EB-E779-4F7E-919A-1C23822548C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6902D7EB-E779-4F7E-919A-1C23822548C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF94DD94-938A-4460-849A-E2D13B9FC727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF94DD94-938A-4460-849A-E2D13B9FC727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF94DD94-938A-4460-849A-E2D13B9FC727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF94DD94-938A-4460-849A-E2D13B9FC727}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
