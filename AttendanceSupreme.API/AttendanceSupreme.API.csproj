@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AttendanceSupreme.Data\AttendanceSupreme.Data.csproj" />
     <ProjectReference Include="..\AttendanceSupreme.Engine\AttendanceSupreme.Engine.csproj" />
+    <ProjectReference Include="..\AttendanceSupreme.Services\AttendanceSupreme.Services.csproj" />
   </ItemGroup>
 
 </Project>

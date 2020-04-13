@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AttendanceSupreme.Data;
+using AttendanceSupreme.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,9 +29,11 @@ namespace AttendanceSupreme.API
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddTransient<IUserService, UserService>();
+
 
             services.AddDbContext<ASDataContext>(opts =>
-                opts.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=AttendaceSupremeDb;Trusted_Connection=true; MultipleActiveResultSets=true"));
+                opts.UseSqlServer(Configuration.GetConnectionString("AttendanceSupreme")));
 
 
             services.AddCors();
@@ -45,9 +48,11 @@ namespace AttendanceSupreme.API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(opts => 
-                opts.WithOrigins("https://localhost:44376", "http://localhost:5000"));
-                
+            //app.UseCors(opts => 
+            //    opts.WithOrigins("https://localhost:44376", "http://localhost:5000"));
+            app.UseCors(opts =>
+                opts.WithOrigins(Configuration.GetSection("AllowedOrigins").Value));
+
             //app.UseHttpsRedirection();
 
             app.UseRouting();
